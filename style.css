@@ -15,22 +15,44 @@ body {
     width: 30vw;
     height: 70vh;
     border: 1px black solid;
+    border-radius: 2px;
 }
 .calc-screen {
     grid-row: 1;
     display: grid;
+    align-items: center;
     background-color: rgb(49, 59, 49);
     height: 15vh;
     width: 27vw;
     border-radius: 2px;
 }
+.calc-screen h1 {
+    text-align: right;
+    text-justify: center;
+    color: black;
+    font-size: 5vw;
+    font-family: monospace;
+}
 .calc-input {
     grid-row: 2;
     display: grid;
-    border: 1px black solid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 20% 20% 20% 20% 20%;
-    background-color: antiquewhite;
     height: 50vh;
     width: 27vw;
+}
+.calc-buttons {
+    display: grid;
+    place-items: center;
+    border-radius: 25%;
+    margin: 1px;
+    background-color: rgb(62, 68, 73);
+    color: rgb(205, 215, 223);
+}
+.calcInputButtons {
+    background: none;
+    border-radius: 25%;
+    height: 10vh;
+    width: 6.75vw;
+    box-shadow: none;
 }
